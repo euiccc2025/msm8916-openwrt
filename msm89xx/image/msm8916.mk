@@ -74,4 +74,26 @@ define Device/generic-m9s
 endef
 TARGET_DEVICES += generic-m9s
 
+define Device/xiaoxun-jz0145-v33
+  $(Device/msm8916)
+  DEVICE_VENDOR := Xiaoxun
+  DEVICE_MODEL := JZ0145 v33
+  FILESYSTEMS := squashfs
+  DEVICE_PACKAGES := configs-dongle wpad-basic-wolfssl rmtfs uci-usb-gadget \
+                     block-mount f2fs-tools prepare-rootfs-data \
+                     msm-firmware-dumper
+endef
+TARGET_DEVICES += xiaoxun-jz0145-v33
+
+define Device/xiaoxun-jz02-v30
+  $(Device/msm8916)
+  DEVICE_VENDOR := Xiaoxun
+  DEVICE_MODEL := JZ02-V30
+  FILESYSTEMS := squashfs
+  DEVICE_PACKAGES := configs-dongle wpad-basic-wolfssl rmtfs uci-usb-gadget \
+                     block-mount f2fs-tools prepare-rootfs-data \
+                     msm-firmware-dumper
+endef
+TARGET_DEVICES += xiaoxun-jz02-v30
+
 endif

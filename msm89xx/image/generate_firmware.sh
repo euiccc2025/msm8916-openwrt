@@ -107,7 +107,7 @@ if [ ! -f "$BUILDDIR/lk2nd/build-lk1st-msm8916/emmc_appsboot.mbn" ]; then
     make clean || true
     make \
       LK2ND_BUNDLE_DTB="msm8916-512mb-mtp.dtb" \
-      LK2ND_COMPATIBLE="yiming,uz801-v3" \
+      LK2ND_COMPATIBLE="xiaoxun,jz0145-v33" \
       TOOLCHAIN_PREFIX="$ARM_CROSS" \
       lk1st-msm8916
   )
